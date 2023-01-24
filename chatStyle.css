@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#intro{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/intro_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    padding-top: 245px;
+}
+
+#video{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#video2{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#video2.active{
+    display: block;
+}
+
+#mov{
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 62px;
+    background-image: url(img/top_middle.jpg);
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerFront{
+    width: 375px;
+    height: 62px;
+    background-image: url(img/top_front.jpg);
+}
+
+#headerEnd{
+    width: 35px;
+    height: 62px;
+    background-image: url(img/top_end.jpg);
+}
+
+#chatBg{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/chatBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#chatBody{
+    width: 980px;
+    height: 1600px;
+    margin: 28px 20px 20px 20px;
+    border-top: 2px solid #d6d6d8;
+    border-left: 2px solid #d6d6d8;
+    border-bottom: 2px solid #d6d6d8;
+    border-right: 2px solid #585960;
+    padding: 20px 28px;
+    background-color: black;
+    overflow: auto;
+}
+
+#chatBody::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+#chatInput{
+    width: 1035px;
+    height: 94px;
+    margin: 0px 20px 15px 20px;
+    background-color: white;
+    display: flex;
+    border-top: 2px solid #e1e1e1;
+    border-left: 2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;
+    border-right: 2px solid #585960;
+    align-items: center;
+}
+
+#chatSub{
+    opacity: 0;
+}
+
+
+#chatDefault{
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+#footer{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerFront{
+    width: 80px;
+    height: 58px;
+    background-image: url(img/bottom_front.png);
+}
+
+#footerEnd{
+    width: 100px;
+    height: 58px;
+    background-image: url(img/bottom_end.png);
+}
+
+#chatMain{
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    border: none;
+}
+
+#chatMain:focus{
+    outline: none;
+}
+
+#cmd{
+    width: 783px;
+    height: 610px;
+    position: fixed;
+    top: 330px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cmdHead{
+    width: 100%;
+    height: 32px;
+    background-image: url(img/cmd_middle.jpg);
+    display: flex;
+    justify-content: space-between;
+}
+
+#cmdFront{
+    width: 450px;
+    height: 32px;
+    background-image: url(img/cmd_frontjpg.jpg);
+    background-repeat: no-repeat;
+}
+
+#cmdEnd{
+    width: 62px;
+    height: 32px;
+    background-image: url(img/cmd_end.jpg);
+    background-repeat: no-repeat;
+}
+
+#cmdBody{
+    width: 769px;
+    height: 100%;
+    border: 2px solid #E1E1E1;
+    padding: 5px;
+    background-color: black;
+    overflow: auto;
+}
+
+#cmdBody::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+@font-face {
+    font-family: "typeFont";
+    src: url(font/DungGeunMo.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "typeFontB";
+    src: url(font/DungGeunMo.ttf) format("truetype");
+}
+
+.chatAText{
+    color: black;
+    font-family:"typeFont";
+    font-size: 30px;
+}
+
+.chatBodyText{
+    color: white;
+    font-family:"typeFont";
+    font-size: 23px;
+    padding: 8px 0px;
+}
+
+.chatBodyTextB{
+    color: #58c2a1;
+    font-family:"typeFontB";
+    font-size: 23px;
+    padding: 8px 0px;
+}
+
+.cmdText{
+    font-family:"typeFont";
+    font-size: 20px;
+    line-height: 30px;
+}
+
+input{
+    caret-color: transparent;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>someone_chat</title>
+    <link rel="stylesheet" href="chatStyle.css">
+    <script src="chat.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="headerFront"></div>
+            <div id="headerMiddle"></div>
+            <div id="headerEnd"></div>
+        </div>
+        <div id="chatBg">
+             키보드 'control' 클릭시 썸원 - 섬 채팅 전환
+            <div id="chatBody"></div>
+            <div id="chatInput">
+                <span id="chatDefault" class="chatAText">>> </span><input type="text" id="chatMain" class="chatAText" maxlength="100">
+            </div>
+            <div id="footer">
+                <div id="footerFront"></div>
+                <div id="footerMiddle"><input type="text" id="chatSub" maxlength="100" size="20"></div>
+                <div id="footerEnd"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cmd">
+        <div id="cmdHead">
+            <div id="cmdFront"></div>
+            <div id="cmdEnd"></div>
+        </div>
+        <div id="cmdBody" class="cmdText"></div>
+    </div>
+
+    <div id="intro">
+        <div id="introContent">
+            <img src="img/intro_content.png" alt="">
+        </div>
+        키보드 's' 두번 클릭시 채팅창으로 전환
+    </div>
+
+    <div id="video">
+        <video id="mov" src="mov/someone_aurora.mp4" autoplay muted loop></video>
+    </div>
+
+    <div id="video2">
+        <video id="mov" src="mov/green.mp4" autoplay muted loop></video>
+    </div>
+
+    
+</body>
+</html>
